@@ -1,3 +1,4 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wds: <http://www.wikidata.org/entity/statement/>
@@ -9,6 +10,9 @@ PREFIX ps: <http://wikidata.org/prop/statement/>
 PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 
-SELECT * WHERE {
-  ?sub ?pred ?obj .
-} LIMIT 10
+SELECT ?item ?itemLabel 
+WHERE 
+{
+  ?item wdt:P460 wd:Q1492. # Gets barcelona
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+}
