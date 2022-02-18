@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wds: <http://www.wikidata.org/entity/statement/>
+PREFIX wdv: <http://www.wikidata.org/value/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX p: <http://wikidata.org/prop/>
+PREFIX ps: <http://wikidata.org/prop/statement/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#>
+
+SELECT DISTINCT ?c ?label ?area ?pop ?web (COUNT(?twin) AS ?count) (GROUP_CONCAT(?time; SEPARATOR=", ") as ?timezones)
+WHERE 
+{
+	?c rdf:type db:City ;
+  	db:CityWikiRelation ?wikicity
+  
+  SERVICE <http://query.wikidata.org/sparql> {
+    ?wikicity rdfs:label ?label
+    FILTER (langMatches( lang(?label), "EN" ))
+    ?wikicity wdt:P2046 ?area.
+    ?wikicity wdt:P1082 ?pop.
+    ?wikicity wdt:P856 ?web.
+    ?wikicity wdt:P190 ?twin.
+    OPTIONAL {?wikicity wdt:P421 ?tz.
+      ?tz wdt:P373 ?time}
+    OPTIONAL {?tz wdt:P421 ?gmt .
+      			?gmt wdt:P373 ?time}
+}
+GROUP BY ?label ?area ?pop ?web ?c ?timezones
+ORDER BY(?count)
