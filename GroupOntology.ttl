@@ -279,7 +279,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://www.wikidata.org/entity/Q25#CityWiki
 <http://www.wikidata.org/entity/Q25#CityWiki> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.wikidata.org/entity/Q25#WikiData> .
+                                              rdfs:subClassOf <http://www.wikidata.org/entity/Q25#CountryWiki> .
 
 
 ###  http://www.wikidata.org/entity/Q25#CountryWiki
@@ -298,7 +298,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Berlin
 :Berlin rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q64#BerlinWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q64> ;
         :hasCountry :Germany ;
         :isCaptial :Germany ;
         rdfs:comment "City of Berlin"@en ;
@@ -311,7 +311,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Brighton
 :Brighton rdf:type owl:NamedIndividual ,
                    :City ;
-          :CityWikiRelation <http://www.wikidata.org/entity/Q131491#BrightonWiki> ;
+          :CityWikiRelation <http://www.wikidata.org/entity/Q131491> ;
           :hasCountry :England ;
           rdfs:comment "City of Brighton"@en ;
           rdfs:label <https://www.wikidata.org/wiki/Q131491> ,
@@ -323,7 +323,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Cardiff
 :Cardiff rdf:type owl:NamedIndividual ,
                   :City ;
-         :CityWikiRelation <http://www.wikidata.org/entity/Q10690#CardiffWiki> ;
+         :CityWikiRelation <http://www.wikidata.org/entity/Q10690> ;
          :hasCountry :Wales ;
          :isCaptial :Wales ;
          rdfs:comment "City of Cardiff"@en ;
@@ -336,7 +336,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Cologne
 :Cologne rdf:type owl:NamedIndividual ,
                   :City ;
-         :CityWikiRelation <http://www.wikidata.org/entity/Q365#CologneWiki> ;
+         :CityWikiRelation <http://www.wikidata.org/entity/Q365> ;
          :hasCountry :Germany ;
          rdfs:comment "City of Cologne"@en ;
          rdfs:label <https://www.wikidata.org/wiki/Q365> ,
@@ -348,7 +348,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Dublin
 :Dublin rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q1761#DublinWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q1761> ;
         :hasCountry :Ireland ;
         :isCaptial :Ireland ;
         rdfs:comment "City of Dublin"@en ;
@@ -361,7 +361,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Edinburgh
 :Edinburgh rdf:type owl:NamedIndividual ,
                     :City ;
-           :CityWikiRelation <http://www.wikidata.org/entity/Q23436#EdinburghWiki> ;
+           :CityWikiRelation <http://www.wikidata.org/entity/Q23436> ;
            :hasCountry :Scotland ;
            :isCaptial :Scotland ;
            rdfs:comment "City of Edinburgh"@en ;
@@ -374,7 +374,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#England
 :England rdf:type owl:NamedIndividual ,
                   :Country ;
-         :CountryWikiRelation <http://www.wikidata.org/entity/Q21#EnglandWiki> ;
+         :CountryWikiRelation <http://www.wikidata.org/entity/Q21> ;
          rdfs:comment "Country of England"@en ;
          rdfs:label <https://www.wikidata.org/wiki/Q21> ,
                     "Angleterre"@fr ,
@@ -384,7 +384,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Frankfurt
 :Frankfurt rdf:type owl:NamedIndividual ,
                     :City ;
-           :CityWikiRelation <http://www.wikidata.org/entity/Q1794#FrankfurtWiki> ;
+           :CityWikiRelation <http://www.wikidata.org/entity/Q1794> ;
            :hasCountry :Germany ;
            rdfs:comment "City of Frankfurt"@en ;
            rdfs:label <https://www.wikidata.org/wiki/Q1794> ,
@@ -396,7 +396,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Germany
 :Germany rdf:type owl:NamedIndividual ,
                   :Country ;
-         :CountryWikiRelation <http://www.wikidata.org/entity/Q183#GermanyWiki> ;
+         :CountryWikiRelation <http://www.wikidata.org/entity/Q183> ;
          rdfs:comment "Country of Germany"@en ;
          rdfs:label <https://www.wikidata.org/wiki/Q183> ,
                     "Allemagne"@fr ,
@@ -406,7 +406,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Ireland
 :Ireland rdf:type owl:NamedIndividual ,
                   :Country ;
-         :CountryWikiRelation <http://www.wikidata.org/entity/Q22890#IrelandWiki> ;
+         :CountryWikiRelation <http://www.wikidata.org/entity/Q22890> ;
          rdfs:comment "Country of Ireland"@en ;
          rdfs:label <https://www.wikidata.org/wiki/Q22890> ,
                     "Ireland"@en ,
@@ -416,7 +416,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Italy
 :Italy rdf:type owl:NamedIndividual ,
                 :Country ;
-       :CountryWikiRelation <http://www.wikidata.org/entity/Q38#ItalyWiki> ;
+       :CountryWikiRelation <http://www.wikidata.org/entity/Q38> ;
        rdfs:comment "Country of Italy"@en ;
        rdfs:label <https://www.wikidata.org/wiki/Q38> ,
                   "Italie"@fr ,
@@ -426,7 +426,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Lisbon
 :Lisbon rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q597#LisbonWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q597> ;
         :hasCountry :Portugal ;
         :isCaptial :Portugal ;
         rdfs:comment "City of Lisbon"@en ;
@@ -439,7 +439,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#London
 :London rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q84#LondonWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q84> ;
         :hasCountry :England ;
         :isCaptial :England ;
         rdfs:comment "City of London"@en ;
@@ -452,7 +452,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Madrid
 :Madrid rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q2807#MadridWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q2807> ;
         :hasCountry :Spain ;
         :isCaptial :Spain ;
         rdfs:comment "City of Madrid"@en ;
@@ -465,7 +465,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Morocco
 :Morocco rdf:type owl:NamedIndividual ,
                   :Country ;
-         :CityWikiRelation <http://www.wikidata.org/entity/Q1028#MoroccoWiki> ;
+         :CityWikiRelation <http://www.wikidata.org/entity/Q1028> ;
          rdfs:comment "Country of Morocco"@en ;
          rdfs:label <https://www.wikidata.org/wiki/Q1028> ,
                     "Maroc"@fr ,
@@ -475,7 +475,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Naples
 :Naples rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q2634#NaplesWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q2634> ;
         :hasCountry :Italy ;
         rdfs:comment "City of Naples"@en ;
         rdfs:label <https://www.wikidata.org/wiki/Q2634> ,
@@ -487,7 +487,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Portugal
 :Portugal rdf:type owl:NamedIndividual ,
                    :Country ;
-          :CountryWikiRelation <http://www.wikidata.org/entity/Q45#PortugalWiki> ;
+          :CountryWikiRelation <http://www.wikidata.org/entity/Q45> ;
           rdfs:comment "Country of Portugal"@en ;
           rdfs:label <https://www.wikidata.org/wiki/Q45> ,
                      "Portugal"@en .
@@ -496,7 +496,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Rabat
 :Rabat rdf:type owl:NamedIndividual ,
                 :City ;
-       :CityWikiRelation <http://www.wikidata.org/entity/Q3551#RabatWiki> ;
+       :CityWikiRelation <http://www.wikidata.org/entity/Q3551> ;
        :hasCountry :Morocco ;
        :isCaptial :Morocco ;
        rdfs:comment "City of Rabat"@en ;
@@ -509,7 +509,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Rome
 :Rome rdf:type owl:NamedIndividual ,
                :City ;
-      :CityWikiRelation <http://www.wikidata.org/entity/Q220#RomeWiki> ;
+      :CityWikiRelation <http://www.wikidata.org/entity/Q220> ;
       :hasCountry :Italy ;
       :isCaptial :Italy ;
       rdfs:comment "City of Rome"@en ;
@@ -522,7 +522,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Scotland
 :Scotland rdf:type owl:NamedIndividual ,
                    :Country ;
-          :CountryWikiRelation <http://www.wikidata.org/entity/Q22#ScotlandWiki> ;
+          :CountryWikiRelation <http://www.wikidata.org/entity/Q22> ;
           rdfs:comment "Country of Scotland"@en ;
           rdfs:label <https://www.wikidata.org/wiki/Q22> ,
                      "Scotland"@en ,
@@ -532,7 +532,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Spain
 :Spain rdf:type owl:NamedIndividual ,
                 :Country ;
-       :CountryWikiRelation <http://www.wikidata.org/entity/Q29#SpainWiki> ;
+       :CountryWikiRelation <http://www.wikidata.org/entity/Q29> ;
        rdfs:comment "Country of Spain"@en ;
        rdfs:label <https://www.wikidata.org/wiki/Q29> ,
                   "Espagne"@fr ,
@@ -600,7 +600,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Venice
 :Venice rdf:type owl:NamedIndividual ,
                  :City ;
-        :CityWikiRelation <http://www.wikidata.org/entity/Q641#VeniceWiki> ;
+        :CityWikiRelation <http://www.wikidata.org/entity/Q641> ;
         :hasCountry :Italy ;
         rdfs:comment "City of Venice"@en ;
         rdfs:label <https://www.wikidata.org/wiki/Q641> ,
@@ -612,126 +612,149 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Wales
 :Wales rdf:type owl:NamedIndividual ,
                 :Country ;
-       :CountryWikiRelation <http://www.wikidata.org/entity/Q25#WalesWiki> ;
+       :CountryWikiRelation <http://www.wikidata.org/entity/Q25> ;
        rdfs:comment "Country of Wales"@en ;
        rdfs:label <https://www.wikidata.org/wiki/Q25> ,
                   "Wales"@en ,
                   "pays de Galles"@fr .
 
 
-###  http://www.wikidata.org/entity/Q1028#MoroccoWiki
-<http://www.wikidata.org/entity/Q1028#MoroccoWiki> rdf:type owl:NamedIndividual ,
-                                                            <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q1028
+<http://www.wikidata.org/entity/Q1028> rdf:type owl:NamedIndividual ,
+                                                <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                       rdfs:label "Morocco Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q10690#CardiffWiki
-<http://www.wikidata.org/entity/Q10690#CardiffWiki> rdf:type owl:NamedIndividual ,
-                                                             <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q10690
+<http://www.wikidata.org/entity/Q10690> rdf:type owl:NamedIndividual ,
+                                                 <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                        rdfs:label "Cardiff Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q131491#BrightonWiki
-<http://www.wikidata.org/entity/Q131491#BrightonWiki> rdf:type owl:NamedIndividual ,
-                                                               <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q131491
+<http://www.wikidata.org/entity/Q131491> rdf:type owl:NamedIndividual ,
+                                                  <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                         rdfs:label "Brighton Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q1761#DublinWiki
-<http://www.wikidata.org/entity/Q1761#DublinWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q1761
+<http://www.wikidata.org/entity/Q1761> rdf:type owl:NamedIndividual ,
+                                                <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                       rdfs:label "Dublin Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q1794#FrankfurtWiki
-<http://www.wikidata.org/entity/Q1794#FrankfurtWiki> rdf:type owl:NamedIndividual ,
-                                                              <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q1794
+<http://www.wikidata.org/entity/Q1794> rdf:type owl:NamedIndividual ,
+                                                <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                       rdfs:label "Frankfurt Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q183#GermanyWiki
-<http://www.wikidata.org/entity/Q183#GermanyWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CountryWiki> .
+###  http://www.wikidata.org/entity/Q183
+<http://www.wikidata.org/entity/Q183> rdf:type owl:NamedIndividual ,
+                                               <http://www.wikidata.org/entity/Q25#CountryWiki> ;
+                                      rdfs:label "Germany Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q21#EnglandWiki
-<http://www.wikidata.org/entity/Q21#EnglandWiki> rdf:type owl:NamedIndividual ,
-                                                          <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q21
+<http://www.wikidata.org/entity/Q21> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                     rdfs:label "England Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q22#ScotlandWiki
-<http://www.wikidata.org/entity/Q22#ScotlandWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q22
+<http://www.wikidata.org/entity/Q22> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                     rdfs:label "Scotland Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q220#RomeWiki
-<http://www.wikidata.org/entity/Q220#RomeWiki> rdf:type owl:NamedIndividual ,
-                                                        <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q220
+<http://www.wikidata.org/entity/Q220> rdf:type owl:NamedIndividual ,
+                                               <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                      rdfs:label "Rome Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q22890#IrelandWiki
-<http://www.wikidata.org/entity/Q22890#IrelandWiki> rdf:type owl:NamedIndividual ,
-                                                             <http://www.wikidata.org/entity/Q25#CountryWiki> .
+###  http://www.wikidata.org/entity/Q22890
+<http://www.wikidata.org/entity/Q22890> rdf:type owl:NamedIndividual ,
+                                                 <http://www.wikidata.org/entity/Q25#CountryWiki> ;
+                                        rdfs:label "Ireland Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q23436#EdinburghWiki
-<http://www.wikidata.org/entity/Q23436#EdinburghWiki> rdf:type owl:NamedIndividual ,
-                                                               <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q23436
+<http://www.wikidata.org/entity/Q23436> rdf:type owl:NamedIndividual ,
+                                                 <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                        rdfs:label "Edinburgh Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q25#WalesWiki
-<http://www.wikidata.org/entity/Q25#WalesWiki> rdf:type owl:NamedIndividual ,
-                                                        <http://www.wikidata.org/entity/Q25#CountryWiki> .
+###  http://www.wikidata.org/entity/Q25
+<http://www.wikidata.org/entity/Q25> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CountryWiki> ;
+                                     rdfs:label "Wales Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q2634#NaplesWiki
-<http://www.wikidata.org/entity/Q2634#NaplesWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q2634
+<http://www.wikidata.org/entity/Q2634> rdf:type owl:NamedIndividual ,
+                                                <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                       rdfs:label "Naples Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q2807#MadridWiki
-<http://www.wikidata.org/entity/Q2807#MadridWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q2807
+<http://www.wikidata.org/entity/Q2807> rdf:type owl:NamedIndividual ,
+                                                <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                       rdfs:label "Madrid Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q29#SpainWiki
-<http://www.wikidata.org/entity/Q29#SpainWiki> rdf:type owl:NamedIndividual ,
-                                                        <http://www.wikidata.org/entity/Q25#CountryWiki> .
+###  http://www.wikidata.org/entity/Q29
+<http://www.wikidata.org/entity/Q29> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CountryWiki> ;
+                                     rdfs:label "Spain Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q3551#RabatWiki
-<http://www.wikidata.org/entity/Q3551#RabatWiki> rdf:type owl:NamedIndividual ,
-                                                          <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q3551
+<http://www.wikidata.org/entity/Q3551> rdf:type owl:NamedIndividual ,
+                                                <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                       rdfs:label "Rabat Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q365#CologneWiki
-<http://www.wikidata.org/entity/Q365#CologneWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q365
+<http://www.wikidata.org/entity/Q365> rdf:type owl:NamedIndividual ,
+                                               <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                      rdfs:label "Cologne Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q38#ItalyWiki
-<http://www.wikidata.org/entity/Q38#ItalyWiki> rdf:type owl:NamedIndividual ,
-                                                        <http://www.wikidata.org/entity/Q25#CountryWiki> .
+###  http://www.wikidata.org/entity/Q38
+<http://www.wikidata.org/entity/Q38> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CountryWiki> ;
+                                     rdfs:label "Italy Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q45#PortugalWiki
-<http://www.wikidata.org/entity/Q45#PortugalWiki> rdf:type owl:NamedIndividual ,
-                                                           <http://www.wikidata.org/entity/Q25#CountryWiki> .
+###  http://www.wikidata.org/entity/Q45
+<http://www.wikidata.org/entity/Q45> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CountryWiki> ;
+                                     rdfs:label "Portugal Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q597#LisbonWiki
-<http://www.wikidata.org/entity/Q597#LisbonWiki> rdf:type owl:NamedIndividual ,
-                                                          <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q597
+<http://www.wikidata.org/entity/Q597> rdf:type owl:NamedIndividual ,
+                                               <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                      rdfs:label "Lisbon Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q64#BerlinWiki
-<http://www.wikidata.org/entity/Q64#BerlinWiki> rdf:type owl:NamedIndividual ,
-                                                         <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q64
+<http://www.wikidata.org/entity/Q64> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                     rdfs:label "Berlin Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q641#VeniceWiki
-<http://www.wikidata.org/entity/Q641#VeniceWiki> rdf:type owl:NamedIndividual ,
-                                                          <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q641
+<http://www.wikidata.org/entity/Q641> rdf:type owl:NamedIndividual ,
+                                               <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                      rdfs:label "Venice Wiki"@en .
 
 
-###  http://www.wikidata.org/entity/Q84#LondonWiki
-<http://www.wikidata.org/entity/Q84#LondonWiki> rdf:type owl:NamedIndividual ,
-                                                         <http://www.wikidata.org/entity/Q25#CityWiki> .
+###  http://www.wikidata.org/entity/Q84
+<http://www.wikidata.org/entity/Q84> rdf:type owl:NamedIndividual ,
+                                              <http://www.wikidata.org/entity/Q25#CityWiki> ;
+                                     rdfs:label "London Wiki"@en .
 
 
 #################################################################
