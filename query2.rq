@@ -11,10 +11,22 @@ PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#>
 
-SELECT DISTINCT ?c ?wikicity
+SELECT DISTINCT ?c ?label ?area ?pop ?web ?time (COUNT(?twin) AS ?count)
 WHERE 
 {
 	?c rdf:type db:City ;
-  	 db:CityWikiRelation ?wikicity
+  	db:CityWikiRelation ?wikicity
   
+  SERVICE <http://query.wikidata.org/sparql> {
+    ?wikicity rdfs:label ?label
+    FILTER (langMatches( lang(?label), "EN" ))
+    ?wikicity wdt:P2046 ?area.
+    ?wikicity wdt:P1082 ?pop.
+    ?wikicity wdt:P856 ?web.
+    ?wikicity wdt:P190 ?twin.
+    OPTIONAL {?wikicity wdt:P421 ?tz.
+      ?tz wdt:P373 ?time}
+  }
 }
+GROUP BY ?label ?area ?pop ?web ?time ?c
+ORDER BY(?count)
