@@ -11,9 +11,7 @@ PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#>
 
-# NOT FINISHED
-
-SELECT DISTINCT ?label (COUNT(?mu) AS ?muCount) (COUNT(?gal) AS ?galCount)
+SELECT DISTINCT ?label (COUNT(DISTINCT ?gal) AS ?galCount) (COUNT( DISTINCT ?bot) AS ?botCount) (COUNT( DISTINCT ?mu) AS ?muCount)
 WHERE 
 {
 	?c rdf:type db:City ;
@@ -22,10 +20,22 @@ WHERE
   SERVICE <http://query.wikidata.org/sparql> {
     ?wikicity rdfs:label ?label
     FILTER (lang(?label) = "en" )
-    ?mu wdt:P31/wdt:P279* wd:Q33506;
-    wdt:P276 ?wikicity.
-    ?gal wdt:P31 wd:Q1007870;
-    wdt:P276 ?wikicity.
+    OPTIONAL {
+      # Museums
+      ?mu wdt:P31/wdt:P279* wd:Q33506;
+      (wdt:P276|wdt:P131) ?wikicity
+    }
+    OPTIONAL{
+      # Art Galleries
+      ?gal wdt:P31 wd:Q1007870;
+      (wdt:P276|wdt:P131) ?wikicity
+    }
+    OPTIONAL{
+      # Botanical Gardens
+      ?bot wdt:P31 wd:Q167346;
+      (wdt:P276|wdt:P131) ?wikicity
+    }
   }
 }
-GROUPBY ?label
+GROUP BY ?label
+ORDER BY ?muCount
