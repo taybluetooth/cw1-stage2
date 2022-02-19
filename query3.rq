@@ -11,6 +11,8 @@ PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#>
 
+# NOT FINISHED
+
 SELECT DISTINCT ?label (COUNT(DISTINCT ?gal) AS ?galCount) (COUNT( DISTINCT ?bot) AS ?botCount) (COUNT( DISTINCT ?mu) AS ?muCount)
 WHERE 
 {
@@ -33,7 +35,7 @@ WHERE
     OPTIONAL{
       # Botanical Gardens
       ?bot wdt:P31 wd:Q167346;
-      (wdt:P276|wdt:P131) ?wikicity
+      (wdt:P276|wdt:P131|wdt:P131/wdt:P131) ?wikicity
     }
   }
 }
