@@ -5,14 +5,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6> .
+@base <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology> .
 
-<http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6> rdf:type owl:Ontology ;
-                                                                         dcterms:creator "Nathanael Brown, Jake Barr, Callum Taylor"@en ;
-                                                                         dcterms:description "Group Ontology for F20BD, Group: Nathanael Brown, Jake Barr, Callum Taylor"@en ;
-                                                                         dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-                                                                         dcterms:title "CW1 Group Ontology"@en ;
-                                                                         owl:versionInfo "1.0"@en .
+<http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology> rdf:type owl:Ontology ;
+                                                                   dcterms:creator "Nathanael Brown, Jake Barr, Callum Taylor"@en ;
+                                                                   dcterms:description "Group Ontology for F20BD, Group: Nathanael Brown, Jake Barr, Callum Taylor"@en ;
+                                                                   dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+                                                                   dcterms:title "CW1 Group Ontology"@en ;
+                                                                   owl:versionInfo "1.0"@en .
 
 #################################################################
 #    Annotation properties
@@ -38,17 +38,17 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#CityWikiRelation
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#CityWikiRelation
 :CityWikiRelation rdf:type owl:ObjectProperty ;
                   rdfs:range <http://www.wikidata.org/entity/Q25#CityWiki> .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#CountryWikiRelation
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#CountryWikiRelation
 :CountryWikiRelation rdf:type owl:ObjectProperty ;
                      rdfs:range <http://www.wikidata.org/entity/Q25#CountryWiki> .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#TouredBy
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#TouredBy
 :TouredBy rdf:type owl:ObjectProperty ;
           owl:inverseOf :Touring ;
           rdfs:domain :City ;
@@ -57,7 +57,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "TouredBy"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Touring
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Touring
 :Touring rdf:type owl:ObjectProperty ;
          rdfs:domain :Tour ;
          rdfs:range :City ;
@@ -65,7 +65,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Touring"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#hasCapital
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#hasCapital
 :hasCapital rdf:type owl:ObjectProperty ;
             owl:inverseOf :isCaptial ;
             rdfs:domain :Country ;
@@ -74,7 +74,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "hasCapital"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#hasCity
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#hasCity
 :hasCity rdf:type owl:ObjectProperty ;
          owl:inverseOf :hasCountry ;
          rdfs:domain :Country ;
@@ -83,7 +83,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "hasCity"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#hasCountry
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#hasCountry
 :hasCountry rdf:type owl:ObjectProperty ;
             rdfs:domain :City ;
             rdfs:range :Country ;
@@ -91,7 +91,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "hasCountry"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#isCaptial
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#isCaptial
 :isCaptial rdf:type owl:ObjectProperty ;
            rdfs:domain :City ;
            rdfs:range :Country ;
@@ -103,7 +103,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Tour_Length
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Tour_Length
 :Tour_Length rdf:type owl:DatatypeProperty ;
              dcterms:description "The number of days a tour lasts"@en ;
              rdfs:label "Tour Length"@en .
@@ -113,7 +113,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#City
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#City
 :City rdf:type owl:Class ;
       owl:equivalentClass [ rdf:type owl:Restriction ;
                             owl:onProperty :hasCountry ;
@@ -125,7 +125,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
       rdfs:label "City"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Country
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Country
 :Country rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Restriction ;
                                owl:onProperty :hasCity ;
@@ -136,7 +136,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Country"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Tour
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Tour
 :Tour rdf:type owl:Class ;
       owl:equivalentClass [ rdf:type owl:Restriction ;
                             owl:onProperty :Touring ;
@@ -146,135 +146,135 @@ dcterms:title rdf:type owl:AnnotationProperty .
       rdfs:label "Tour"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#2_Day_Tour
-<http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#2_Day_Tour> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( :Tour
-                                                                                                                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Touring ;
-                                                                                                                                                       owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                                                                                                                       owl:onClass :City
-                                                                                                                                                     ]
-                                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Tour_Length ;
-                                                                                                                                                       owl:hasValue 2
-                                                                                                                                                     ]
-                                                                                                                                                   ) ;
-                                                                                                                                rdf:type owl:Class
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf :Tour ;
-                                                                                   rdfs:comment "Representation of a tour lasting 2 days"@en ;
-                                                                                   rdfs:label "2-Day Tour"@en .
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#2_Day_Tour
+<http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#2_Day_Tour> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ owl:intersectionOf ( :Tour
+                                                                                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Touring ;
+                                                                                                                                                 owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                                                                 owl:onClass :City
+                                                                                                                                               ]
+                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Tour_Length ;
+                                                                                                                                                 owl:hasValue 2
+                                                                                                                                               ]
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ] ;
+                                                                             rdfs:subClassOf :Tour ;
+                                                                             rdfs:comment "Representation of a tour lasting 2 days"@en ;
+                                                                             rdfs:label "2-Day Tour"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#3_Day_Tour
-<http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#3_Day_Tour> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( :Tour
-                                                                                                                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Touring ;
-                                                                                                                                                       owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                                                                                                                       owl:onClass :City
-                                                                                                                                                     ]
-                                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Tour_Length ;
-                                                                                                                                                       owl:hasValue 3
-                                                                                                                                                     ]
-                                                                                                                                                   ) ;
-                                                                                                                                rdf:type owl:Class
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf :Tour ;
-                                                                                   rdfs:comment "Representation of a tour lasting 3 days"@en ;
-                                                                                   rdfs:label "3-Day Tour"@en .
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#3_Day_Tour
+<http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#3_Day_Tour> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ owl:intersectionOf ( :Tour
+                                                                                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Touring ;
+                                                                                                                                                 owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                                                                 owl:onClass :City
+                                                                                                                                               ]
+                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Tour_Length ;
+                                                                                                                                                 owl:hasValue 3
+                                                                                                                                               ]
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ] ;
+                                                                             rdfs:subClassOf :Tour ;
+                                                                             rdfs:comment "Representation of a tour lasting 3 days"@en ;
+                                                                             rdfs:label "3-Day Tour"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#4_Day_Tour
-<http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#4_Day_Tour> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( :Tour
-                                                                                                                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Touring ;
-                                                                                                                                                       owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger ;
-                                                                                                                                                       owl:onClass :City
-                                                                                                                                                     ]
-                                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Tour_Length ;
-                                                                                                                                                       owl:hasValue 4
-                                                                                                                                                     ]
-                                                                                                                                                   ) ;
-                                                                                                                                rdf:type owl:Class
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf :Tour ;
-                                                                                   rdfs:comment "Representation of a tour lasting 4 days"@en ;
-                                                                                   rdfs:label "4-Day Tour"@en .
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#4_Day_Tour
+<http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#4_Day_Tour> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ owl:intersectionOf ( :Tour
+                                                                                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Touring ;
+                                                                                                                                                 owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+                                                                                                                                                 owl:onClass :City
+                                                                                                                                               ]
+                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Tour_Length ;
+                                                                                                                                                 owl:hasValue 4
+                                                                                                                                               ]
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ] ;
+                                                                             rdfs:subClassOf :Tour ;
+                                                                             rdfs:comment "Representation of a tour lasting 4 days"@en ;
+                                                                             rdfs:label "4-Day Tour"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#5_Day_Tour
-<http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#5_Day_Tour> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( :Tour
-                                                                                                                              [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                                                                                              owl:onProperty :Touring ;
-                                                                                                                                                                              owl:minQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
-                                                                                                                                                                              owl:onClass :City
-                                                                                                                                                                            ]
-                                                                                                                                                                            [ rdf:type owl:Restriction ;
-                                                                                                                                                                              owl:onProperty :Touring ;
-                                                                                                                                                                              owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
-                                                                                                                                                                              owl:onClass :City
-                                                                                                                                                                            ]
-                                                                                                                                                                          ) ;
-                                                                                                                                                       rdf:type owl:Class
-                                                                                                                                                     ]
-                                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Tour_Length ;
-                                                                                                                                                       owl:hasValue 5
-                                                                                                                                                     ]
-                                                                                                                                                   ) ;
-                                                                                                                                rdf:type owl:Class
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf :Tour ;
-                                                                                   rdfs:comment "Representation of a tour lasting 5 days"@en ;
-                                                                                   rdfs:label "5-Day Tour"@en .
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#5_Day_Tour
+<http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#5_Day_Tour> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ owl:intersectionOf ( :Tour
+                                                                                                                        [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty :Touring ;
+                                                                                                                                                                        owl:minQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+                                                                                                                                                                        owl:onClass :City
+                                                                                                                                                                      ]
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty :Touring ;
+                                                                                                                                                                        owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                                                                                                                                                        owl:onClass :City
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Tour_Length ;
+                                                                                                                                                 owl:hasValue 5
+                                                                                                                                               ]
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ] ;
+                                                                             rdfs:subClassOf :Tour ;
+                                                                             rdfs:comment "Representation of a tour lasting 5 days"@en ;
+                                                                             rdfs:label "5-Day Tour"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#7_Day_Tour
-<http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#7_Day_Tour> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass [ owl:intersectionOf ( :Tour
-                                                                                                                              [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                                                                                              owl:onProperty :Touring ;
-                                                                                                                                                                              owl:minQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
-                                                                                                                                                                              owl:onClass :City
-                                                                                                                                                                            ]
-                                                                                                                                                                            [ rdf:type owl:Restriction ;
-                                                                                                                                                                              owl:onProperty :Touring ;
-                                                                                                                                                                              owl:maxQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
-                                                                                                                                                                              owl:onClass :City
-                                                                                                                                                                            ]
-                                                                                                                                                                          ) ;
-                                                                                                                                                       rdf:type owl:Class
-                                                                                                                                                     ]
-                                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                                       owl:onProperty :Tour_Length ;
-                                                                                                                                                       owl:hasValue 7
-                                                                                                                                                     ]
-                                                                                                                                                   ) ;
-                                                                                                                                rdf:type owl:Class
-                                                                                                                              ]
-                                                                                                                            ) ;
-                                                                                                         rdf:type owl:Class
-                                                                                                       ] ;
-                                                                                   rdfs:subClassOf :Tour ;
-                                                                                   rdfs:comment "Representation of a tour lasting 7 days"@en ;
-                                                                                   rdfs:label "7-Day Tour"@en .
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#7_Day_Tour
+<http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#7_Day_Tour> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ owl:intersectionOf ( :Tour
+                                                                                                                        [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty :Touring ;
+                                                                                                                                                                        owl:minQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                                                                                                                                                        owl:onClass :City
+                                                                                                                                                                      ]
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty :Touring ;
+                                                                                                                                                                        owl:maxQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
+                                                                                                                                                                        owl:onClass :City
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                 owl:onProperty :Tour_Length ;
+                                                                                                                                                 owl:hasValue 7
+                                                                                                                                               ]
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ] ;
+                                                                             rdfs:subClassOf :Tour ;
+                                                                             rdfs:comment "Representation of a tour lasting 7 days"@en ;
+                                                                             rdfs:label "7-Day Tour"@en .
 
 
 ###  http://www.wikidata.org/entity/Q25#CityWiki
@@ -295,7 +295,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Berlin
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Berlin
 :Berlin rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q64> ;
@@ -308,7 +308,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "Berlín"@es .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Brighton
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Brighton
 :Brighton rdf:type owl:NamedIndividual ,
                    :City ;
           :CityWikiRelation <http://www.wikidata.org/entity/Q131491> ;
@@ -320,7 +320,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                      "Μπράιτον"@gr .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Cardiff
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Cardiff
 :Cardiff rdf:type owl:NamedIndividual ,
                   :City ;
          :CityWikiRelation <http://www.wikidata.org/entity/Q10690> ;
@@ -333,7 +333,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     "Kardiff"@az .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Cologne
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Cologne
 :Cologne rdf:type owl:NamedIndividual ,
                   :City ;
          :CityWikiRelation <http://www.wikidata.org/entity/Q365> ;
@@ -345,7 +345,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     "Köln"@de .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Dublin
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Dublin
 :Dublin rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q1761> ;
@@ -358,7 +358,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "دبلن"@ar .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Edinburgh
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Edinburgh
 :Edinburgh rdf:type owl:NamedIndividual ,
                     :City ;
            :CityWikiRelation <http://www.wikidata.org/entity/Q23436> ;
@@ -371,7 +371,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       "Édimbourg"@fr .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#England
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#England
 :England rdf:type owl:NamedIndividual ,
                   :Country ;
          :CountryWikiRelation <http://www.wikidata.org/entity/Q21> ;
@@ -381,7 +381,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     "England"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Frankfurt
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Frankfurt
 :Frankfurt rdf:type owl:NamedIndividual ,
                     :City ;
            :CityWikiRelation <http://www.wikidata.org/entity/Q1794> ;
@@ -393,7 +393,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       "Frankfurt am Main"@de .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Germany
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Germany
 :Germany rdf:type owl:NamedIndividual ,
                   :Country ;
          :CountryWikiRelation <http://www.wikidata.org/entity/Q183> ;
@@ -403,7 +403,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     "Germany"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Ireland
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Ireland
 :Ireland rdf:type owl:NamedIndividual ,
                   :Country ;
          :CountryWikiRelation <http://www.wikidata.org/entity/Q22890> ;
@@ -413,7 +413,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     "Irlande"@fr .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Italy
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Italy
 :Italy rdf:type owl:NamedIndividual ,
                 :Country ;
        :CountryWikiRelation <http://www.wikidata.org/entity/Q38> ;
@@ -423,7 +423,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   "Italy"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Lisbon
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Lisbon
 :Lisbon rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q597> ;
@@ -436,7 +436,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "Lissabon"@de .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#London
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#London
 :London rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q84> ;
@@ -449,7 +449,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "Lunnon"@sc .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Madrid
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Madrid
 :Madrid rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q2807> ;
@@ -462,7 +462,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "Makelika"@ha .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Morocco
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Morocco
 :Morocco rdf:type owl:NamedIndividual ,
                   :Country ;
          :CityWikiRelation <http://www.wikidata.org/entity/Q1028> ;
@@ -472,7 +472,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     "Morocco"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Naples
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Naples
 :Naples rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q2634> ;
@@ -484,7 +484,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "Neapel"@de .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Portugal
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Portugal
 :Portugal rdf:type owl:NamedIndividual ,
                    :Country ;
           :CountryWikiRelation <http://www.wikidata.org/entity/Q45> ;
@@ -493,7 +493,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                      "Portugal"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Rabat
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Rabat
 :Rabat rdf:type owl:NamedIndividual ,
                 :City ;
        :CityWikiRelation <http://www.wikidata.org/entity/Q3551> ;
@@ -506,7 +506,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   "الرباط"@ar .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Rome
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Rome
 :Rome rdf:type owl:NamedIndividual ,
                :City ;
       :CityWikiRelation <http://www.wikidata.org/entity/Q220> ;
@@ -519,7 +519,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  "Rome"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Scotland
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Scotland
 :Scotland rdf:type owl:NamedIndividual ,
                    :Country ;
           :CountryWikiRelation <http://www.wikidata.org/entity/Q22> ;
@@ -529,7 +529,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                      "Écosse"@fr .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Spain
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Spain
 :Spain rdf:type owl:NamedIndividual ,
                 :Country ;
        :CountryWikiRelation <http://www.wikidata.org/entity/Q29> ;
@@ -539,7 +539,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   "Spain"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Tour_1
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Tour_1
 :Tour_1 rdf:type owl:NamedIndividual ,
                  [ rdf:type owl:Restriction ;
                    owl:onProperty :Touring ;
@@ -553,7 +553,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Tour 1"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Tour_2
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Tour_2
 :Tour_2 rdf:type owl:NamedIndividual ,
                  [ rdf:type owl:Restriction ;
                    owl:onProperty :Touring ;
@@ -566,7 +566,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Tour 2"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Tour_3
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Tour_3
 :Tour_3 rdf:type owl:NamedIndividual ,
                  [ rdf:type owl:Restriction ;
                    owl:onProperty :Touring ;
@@ -581,7 +581,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Tour 3"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Tour_4
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Tour_4
 :Tour_4 rdf:type owl:NamedIndividual ,
                  [ rdf:type owl:Restriction ;
                    owl:onProperty :Touring ;
@@ -597,7 +597,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Tour 4"@en .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Venice
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Venice
 :Venice rdf:type owl:NamedIndividual ,
                  :City ;
         :CityWikiRelation <http://www.wikidata.org/entity/Q641> ;
@@ -609,7 +609,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    "Venise"@fr .
 
 
-###  http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#Wales
+###  http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#Wales
 :Wales rdf:type owl:NamedIndividual ,
                 :Country ;
        :CountryWikiRelation <http://www.wikidata.org/entity/Q25> ;
@@ -762,11 +762,11 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#2_Day_Tour>
-                <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#3_Day_Tour>
-                <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#4_Day_Tour>
-                <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#5_Day_Tour>
-                <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#7_Day_Tour>
+  owl:members ( <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#2_Day_Tour>
+                <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#3_Day_Tour>
+                <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#4_Day_Tour>
+                <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#5_Day_Tour>
+                <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#7_Day_Tour>
               )
 ] .
 
