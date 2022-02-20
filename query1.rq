@@ -1,4 +1,4 @@
-
+# Add Prefixes
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wd: <http://www.wikidata.org/entity/>
@@ -12,14 +12,16 @@ PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#>
 
+# Select ID and Label
 SELECT DISTINCT ?c ?id ?label
 WHERE 
 {
 	?c rdf:type db:City ;
   	db:CityWikiRelation ?wikicity
   
+  # Get Labels in German and French
   SERVICE <http://query.wikidata.org/sparql> {
     ?wikicity rdfs:label ?label.
-    FILTER (langMatches( lang(?label), "DE" ) || langMatches( lang(?label), "FR" ))
+    FILTER ((lang(?label) = "de" ) || (lang(?label) = "fr" ))
   }
 }
