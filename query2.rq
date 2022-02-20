@@ -9,7 +9,7 @@ PREFIX p: <http://wikidata.org/prop/>
 PREFIX ps: <http://wikidata.org/prop/statement/>
 PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX bd: <http://www.bigdata.com/rdf#>
-PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#>
+PREFIX db: <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#>
 
 SELECT DISTINCT ?label ?area ?pop (GROUP_CONCAT( DISTINCT ?web; SEPARATOR=" ") as ?weblist) (GROUP_CONCAT( DISTINCT ?twincity; SEPARATOR=", ") as ?twinlist) (GROUP_CONCAT( DISTINCT ?time; SEPARATOR=", ") as ?timezones) (GROUP_CONCAT( DISTINCT ?time2; SEPARATOR=", ") as ?CountryTimezones)
 WHERE
