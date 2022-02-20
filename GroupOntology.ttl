@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/nfb4/ontologies/2022/1/untitled-ontology-6#> .
+@prefix : <http://www.semanticweb.org/nfb4/ontologies/2022/1/GroupOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
